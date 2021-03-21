@@ -1,0 +1,9 @@
+PostgreSQL:
+  restart: always
+  image: postgres:12.0-alpine
+  ports:
+    - "5432:5432"
+  environment:
+    - POSTGRES_PASSWORD=password
+    - DEBUG=false
+    - POSTGRES_DB=store
